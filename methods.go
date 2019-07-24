@@ -17,12 +17,12 @@ type writer struct {
 // func (r receiver) identifier(parameters) (return(s)) { body }
 // A method in Go:
 func (w writer) speak() {
-    fmt.Print("I am ", w.first, " ", w.last)
-    if w.famous {
-        fmt.Print(", and I'm famous!\n") 
-    } else {
-        fmt.Print("... and I'm not... famous...\n") 
-    }
+	fmt.Print("I am ", w.first, " ", w.last)
+	if w.famous {
+		fmt.Print(", and I'm famous!\n")
+	} else {
+		fmt.Print("... and I'm not... famous...\n")
+	}
 }
 
 func main() {
@@ -34,7 +34,7 @@ func main() {
 		famous: true,
 	}
 
-    w2 := writer{
+	w2 := writer{
 		person: person{
 			"Mimi",
 			"Nini",
@@ -43,7 +43,7 @@ func main() {
 	}
 
 	fmt.Println(w1)
-    w1.speak()
+	w1.speak()
 	fmt.Println(w2)
-    w2.speak()
+	w2.speak()
 }
