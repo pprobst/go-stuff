@@ -8,7 +8,7 @@ func main() {
 	r := make(<-chan int) // receiver channel
 	s := make(chan<- int) // sender channel
 
-	fmt.Printf("c: %T\n", r)
+	fmt.Printf("r: %T\n", r)
 	fmt.Printf("s: %T\n", s)
 
 	c := make(chan int)
